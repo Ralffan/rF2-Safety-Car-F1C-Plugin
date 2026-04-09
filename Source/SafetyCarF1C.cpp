@@ -115,7 +115,7 @@ void SafetycarF1CPlugin::DrawSafetyCar()//Esta función es la que decide aleator
         std::mt19937 gen2(rd2());
         std::uniform_int_distribution<> dist2(startLap, endLap);//se genera distribución uniforme de números enteros de todas las vueltas en que puede haber SC
 
-        scLap = dist2(gen);//Generamos un número entero aleatorio comprendido en el intervalo anterior
+        scLap = dist2(gen2);//Generamos un número entero aleatorio comprendido en el intervalo anterior
     }
 }
 
